@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<select id="sel1">
+		<option value="北京">北京</option>
+		<option value="上海">上海</option>
+		<option value="西安">西安</option>
+	</select>
+	<select id="sel2">
+		<option value="天安门">天安门</option>
+		<option value="东方明珠">东方明珠</option>
+		<option value="兵马俑">兵马俑</option>
+	</select>
+	<button type="button" id="btn">提交</button>
+	<script type="text/javascript">
+    var oSel1 = document.getElementById("sel1");
+    var oSel2 = document.getElementById("sel2");
+    var oBtn = document.getElementById("btn");
+    oBtn.onclick = function (){
+    	alert(oSel2.value+"在"+oSel1.value);
+    }
+	</script>
+	
+</body>
+</html>
